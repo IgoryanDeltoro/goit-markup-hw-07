@@ -1,0 +1,10 @@
+{
+  "cSpell.words": [
+    "monoblock"
+  ],
+  "html.autoClosingTags": false,
+  "javascript.autoClosingTags": false,
+  "typescript.autoClosingTags": false,
+  "prettier.bracketSameLine": false,
+  "prettier.bracketSpacing": true
+}
