@@ -1,0 +1,22 @@
+.address {
+    &__item:not(:last-child) {
+        margin-bottom: 5px;
+    }
+
+    &__link {
+        color: rgba(255, 255, 255, 0.6);
+        font-style: normal;
+
+        &--white {
+            color: var(--white-color);
+        }
+    }
+}
+
+.address__link {
+
+    &:hover,
+    &:focus {
+        color: var(--accent-focus-color);
+    }
+}

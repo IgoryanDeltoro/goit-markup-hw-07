@@ -1,0 +1,25 @@
+@mixin section-padding ($pt, $pr, $pb, $pl, ) {
+    padding-top: $pt;
+    padding-right: $pr;
+    padding-bottom: $pb;
+    padding-left: $pl;
+}
+
+// fonts title h2
+
+@mixin fonts ($fw, $fs, $lh, $ta) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    text-align: $ta;
+}
+
+// display position 
+
+@mixin display ($d, $jc, $ai, $gap ) {
+    display: $d;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gap;
+
+}
