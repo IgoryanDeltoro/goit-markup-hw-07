@@ -1,22 +1,17 @@
-.address {
-    &__item:not(:last-child) {
-        margin-bottom: 5px;
-    }
-
-    &__link {
-        color: rgba(255, 255, 255, 0.6);
-        font-style: normal;
-
-        &--white {
-            color: var(--white-color);
-        }
-    }
+.address_item:not(:last-child) {
+    margin-bottom: 5px;
 }
 
 .address__link {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+
+    &--white {
+        color: $white-color;
+    }
 
     &:hover,
     &:focus {
-        color: var(--accent-focus-color);
+        color: $accent-focus-color;
     }
 }

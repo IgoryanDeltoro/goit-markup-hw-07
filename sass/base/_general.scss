@@ -1,10 +1,10 @@
 body {
-  background-color: var(--main-bgc-color);
+  background-color: $main-bgc-color;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: var(--main-text-color);
+  color: $main-text-color;
 }
 
 .container {
@@ -13,27 +13,14 @@ body {
   width: 1200px;
 }
 
-%button {
-  @include fonts (700, 16px, 1.8);
-
-  border-radius: 4px;
-  border: none;
-  font-family: inherit;
-  letter-spacing: .06em;
-  cursor: pointer;
-  color: var(--white-color);
-}
-
 img {
   display: block;
 }
 
 a {
-  transition: color var(--transition-time) var(--transition-cubic),
-    background-color var(--transition-time) var(--transition-cubic);
+  @include double-transition (color, background-color);
 }
 
 svg {
-  transition: fill var(--transition-time) var(--transition-cubic),
-    background-color var(--transition-time) var(--transition-cubic);
+  @include double-transition (fill, background-color);
 }

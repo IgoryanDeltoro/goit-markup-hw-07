@@ -1,9 +1,9 @@
-// main page
 @import "utils/variables";
 @import "utils/mixin";
-@import "utils/hidden";
-@import "base/reset";
 @import "base/general";
+@import "base/reset";
+@import "utils/hidden";
+@import "utils/placeholder";
 
 
 // header
@@ -19,7 +19,7 @@
 @import "components/main-page/team";
 @import "components/main-page/customers";
 
-// portfolio
+// next-page portfolio
 @import "components/portfolio/portfolio-container";
 @import "components/portfolio/filter";
 @import "components/portfolio/project";

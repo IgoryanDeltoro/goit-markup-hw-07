@@ -14,13 +14,13 @@
     @include fonts (700, 26px, 1.17);
     font-family: 'Raleway', sans-serif;
 
-    color: var(--second-text-color);
+    color: $second-text-color;
 
     &__label {
-        color: var(--hyper-link-color);
+        color: $hyper-link-color;
 
         &--white {
-            color: var(--white-color);
+            color: $white-color;
         }
     }
 }

@@ -15,20 +15,22 @@
 }
 
 .policy__icon {
+    @include single-transition (border-color);
+    @include double-transition (transform,
+        background-color);
+
     position: absolute;
     top: 50%;
     left: 12px;
     transform: translateY(-50%) scale(1);
-    border: 2px solid var(--black-color);
+    border: 2px solid $black-color;
     border-radius: 2px;
     background-origin: border-box;
-    transition: border-color var(--transition-time) var(--transition-cubic),
-        background-color var(--transition-time) var(--transition-cubic),
-        transform var(--transition-time) var(--transition-cubic);
+
 
     .policy__checkbox-hidden:checked+& {
-        border-color: var(--accent-focus-color);
-        background-color: var(--accent-focus-color);
+        border-color: $accent-focus-color;
+        background-color: $accent-focus-color;
         transform: translateY(-50%) scale(1.1);
     }
 
@@ -39,7 +41,7 @@
 }
 
 .policy__link {
-    color: var(--hyper-link-color);
+    color: $hyper-link-color;
 
 }
 
@@ -54,5 +56,5 @@
     bottom: 0;
     width: 100%;
     height: 1px;
-    background-color: var(--hyper-link-color);
+    background-color: $hyper-link-color;
 }

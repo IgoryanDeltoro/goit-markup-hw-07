@@ -18,12 +18,12 @@
     @include fonts (500, 14px, 1.1);
     padding: 32px 0;
     letter-spacing: 0.02em;
-    color: var(--second-text-color);
+    color: $second-text-color;
 }
 
 .navigation__link {
     &--current {
-        color: var(--accent-focus-color);
+        color: $accent-focus-color;
         position: relative;
 
         &::after {
@@ -37,7 +37,7 @@
             height: 4px;
 
             border-radius: 2px;
-            background-color: var(--accent-focus-color);
+            background-color: $accent-focus-color;
         }
     }
 
@@ -48,10 +48,10 @@
 
     &:hover,
     &:focus {
-        color: var(--accent-focus-color);
+        color: $accent-focus-color;
     }
 
     &:active {
-        color: var(--accent-focus-color);
+        color: $accent-focus-color;
     }
 }

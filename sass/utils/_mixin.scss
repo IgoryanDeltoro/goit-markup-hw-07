@@ -20,3 +20,13 @@
     justify-content: $jc;
     align-items: $ai;
 }
+
+// transition 
+@mixin single-transition ($variable) {
+    transition: $variable $transition-time $transition-cubic
+}
+
+@mixin double-transition ($variable-first, $variable-second ) {
+    transition: $variable-first $transition-time $transition-cubic,
+        $variable-second $transition-time $transition-cubic;
+}

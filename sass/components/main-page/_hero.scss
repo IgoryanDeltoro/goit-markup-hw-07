@@ -6,8 +6,8 @@
 
     text-align: center;
 
-    background-color: var(--hero-bgc);
-    background-image: linear-gradient(var(--overlay-color), var(--overlay-color)),
+    background-color: $hero-bgc;
+    background-image: linear-gradient($overlay-color, $overlay-color),
         url(../images/background-img/Img.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -23,24 +23,27 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    color: var(--white-color);
+    color: $white-color;
 }
 
 .hero__btn {
     @extend %button;
-    padding: 10px 32px;
+    @include fonts (700, 16px, 1.8);
+    @include double-transition (background-color, box-shadow);
 
-    background-color: var(--hyper-link-color);
-    transition: background-color var(--transition-time) var(--transition-cubic),
-        box-shadow var(--transition-time) var(--transition-cubic);
+    padding: 10px 32px;
+    letter-spacing: .06em;
+    color: $white-color;
+
+    background-color: $hyper-link-color;
 
     &:hover,
     &:focus {
-        background-color: var(--active-btn);
+        background-color: $active-btn;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
 
     &:active {
-        background-color: var(--active-btn);
+        background-color: $active-btn;
     }
 }

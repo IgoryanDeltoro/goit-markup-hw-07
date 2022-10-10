@@ -8,7 +8,7 @@
     margin-bottom: 20px;
     text-transform: uppercase;
 
-    color: var(--white-color);
+    color: $white-color;
 }
 
 .social {
@@ -36,7 +36,7 @@
 
 .social__icon {
     &--white {
-        fill: var(--white-color);
+        fill: $white-color;
     }
 
 }
@@ -47,10 +47,10 @@
 
     &:hover,
     &:focus {
-        background-color: var(--accent-focus-color);
+        background-color: $accent-focus-color;
     }
 
     &:active {
-        background-color: var(--accent-focus-color);
+        background-color: $accent-focus-color;
     }
 }
