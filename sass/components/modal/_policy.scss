@@ -1,5 +1,5 @@
 .policy {
-    @include display (flex, center, none, 0);
+    @include display (flex, center, center);
     position: relative;
 }
 

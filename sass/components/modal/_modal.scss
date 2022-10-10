@@ -44,9 +44,7 @@
 }
 
 .close-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display (flex, center, center);
 
     position: absolute;
     top: 8px;

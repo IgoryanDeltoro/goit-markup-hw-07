@@ -4,13 +4,15 @@
 }
 
 .team__title {
-    @include fonts (700px, 36px, 1.17, center);
+    @include fonts (700, 36px, 1.17);
+    text-align: center;
     margin-bottom: 50px;
     color: var(--second-text-color);
 }
 
 .team__list {
-    @include display (flex, center, center, 30px);
+    @include display (flex, center, center);
+    gap: 30px;
 }
 
 
@@ -30,11 +32,9 @@
 }
 
 .team__name {
-    margin-bottom: 10px;
+    @include fonts (500, 16px, 1.12);
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.2;
+    margin-bottom: 10px;
 
     text-align: center;
 

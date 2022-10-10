@@ -1,5 +1,6 @@
 .filter__list {
-    @include display (flex, center, center, 8px);
+    @include display (flex, center, center);
+    gap: 8px;
 }
 
 .container__filter {
@@ -9,7 +10,7 @@
 
 
 .filter__btn {
-    @include fonts (500, 16px, 1.6, center);
+    @include fonts (500, 16px, 1.6);
     font-family: inherit;
 
     padding: 6px 25px;

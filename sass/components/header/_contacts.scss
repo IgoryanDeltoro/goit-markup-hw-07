@@ -1,6 +1,5 @@
 .cont-list {
-    display: flex;
-    align-items: center;
+    @include display (flex, center, center);
     margin-left: auto;
 }
 
@@ -13,16 +12,14 @@
 }
 
 .cont-list__link {
-    color: var(--main-text-color);
-    display: flex;
-    align-items: center;
+    @include fonts (500, 14px, 1.1);
+    @include display (flex, center, center);
+
     padding: 32px 0;
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
     text-decoration: none;
     letter-spacing: 0.02em;
+    color: var(--main-text-color);
 }
 
 .cont-list__link {

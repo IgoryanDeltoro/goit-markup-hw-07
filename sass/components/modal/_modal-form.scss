@@ -6,7 +6,7 @@
 }
 
 .form__title {
-    @include fonts (700, 20px, 1.15, none);
+    @include fonts (700, 20px, 1.15);
     margin-bottom: 12px;
     color: var(--second-text-color);
 }
@@ -99,15 +99,14 @@
 
 
 .form__btn {
+    @include fonts (700, 16px, 1.8);
+
     display: inline-block;
     text-align: center;
     width: 200px;
     height: 50px;
 
     font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.8;
 
     letter-spacing: 0.06em;
     cursor: pointer;

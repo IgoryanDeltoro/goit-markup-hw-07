@@ -7,19 +7,16 @@
 
 // fonts title h2
 
-@mixin fonts ($fw, $fs, $lh, $ta) {
+@mixin fonts ($fw, $fs, $lh) {
     font-weight: $fw;
     font-size: $fs;
     line-height: $lh;
-    text-align: $ta;
 }
 
 // display position 
 
-@mixin display ($d, $jc, $ai, $gap ) {
-    display: $d;
+@mixin display ($f, $jc, $ai) {
+    display: $f;
     justify-content: $jc;
     align-items: $ai;
-    gap: $gap;
-
 }

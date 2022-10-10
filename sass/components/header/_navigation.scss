@@ -1,14 +1,12 @@
-.nav {
-    display: flex;
-    align-items: center;
+.container-nav {
+    @include display (flex, center, center);
 }
 
-.nav__list {
-    display: flex;
-    align-items: center;
+.navigation {
+    @include display (flex, center, center);
 }
 
-.nav__item {
+.navigation__item {
     margin-right: 50px;
 
     &:last-child {
@@ -16,22 +14,14 @@
     }
 }
 
-.nav__link {
-
-    display: flex;
-    align-items: center;
+.navigation__link {
+    @include fonts (500, 14px, 1.1);
     padding: 32px 0;
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    text-decoration: none;
     letter-spacing: 0.02em;
-
     color: var(--second-text-color);
 }
 
-.nav__link {
+.navigation__link {
     &--current {
         color: var(--accent-focus-color);
         position: relative;
@@ -54,7 +44,7 @@
 
 }
 
-.nav__link {
+.navigation__link {
 
     &:hover,
     &:focus {

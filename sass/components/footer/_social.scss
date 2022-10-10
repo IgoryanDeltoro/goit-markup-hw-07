@@ -3,35 +3,29 @@
 }
 
 .social-box__title {
-    margin-bottom: 20px;
+    @include fonts (700, 14px, 1.17);
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.17;
+    margin-bottom: 20px;
     text-transform: uppercase;
 
     color: var(--white-color);
 }
 
 .social {
-    display: flex;
-    justify-content: center;
+    @include display (flex, center, center);
     gap: 10px;
 }
 
 .social__item {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+    @include display (flex, center, center);
 }
 
 .social__link {
-    display: flex;
+    @include display (flex, center, center);
+
     width: 44px;
     height: 44px;
 
-    justify-content: center;
-    align-items: center;
     border-radius: 50%;
 
     &:last-child {
